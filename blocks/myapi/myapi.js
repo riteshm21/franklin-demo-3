@@ -5,7 +5,7 @@ export default async function decorate(block) {
   const div = document.createElement('div');
 
 
-          div.classList.add('myapi-class');
+          div.addClass('myapi-class');
         
 		
 const title = printTitle();
@@ -19,7 +19,7 @@ async function printTitle() {
   const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
 
 
-  const text = await response.title();
+  const text = await response.json();
   
   $('#myapi-class').add(text);
   return text;
