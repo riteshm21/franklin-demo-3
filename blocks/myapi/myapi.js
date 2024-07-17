@@ -5,7 +5,8 @@ export default function decorate(block) {
   const div = document.createElement('div');
 
  var data = fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json());
+      .then(response => response.json())
+      .then(json => console.log(json));
 	  
 	alert("data"+data);  
   block.append(data.title);
