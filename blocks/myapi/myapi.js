@@ -5,7 +5,7 @@ export default async function decorate(block) {
   const div = document.createElement('div');
 
 
-          div.addClass('myapi-class');
+          div.className  = 'myapi-class';
         
 		
 const title = printTitle();
@@ -20,7 +20,6 @@ async function printTitle() {
 
 
   const text = await response.json();
-  
   
   $('#myapi-class').add(text);
   return text;
