@@ -21,6 +21,7 @@ async function printTitle() {
 
   const text = await response.json();
   
+  
   $('#myapi-class').add(text);
   return text;
 }
