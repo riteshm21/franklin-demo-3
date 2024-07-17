@@ -16,8 +16,8 @@ const title = fetchData();
 
 
 async function fetchData() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-  // waits until the request completes...
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos/1').then(res=>res.clone().json())
+
   console.log(response);
 }
 
