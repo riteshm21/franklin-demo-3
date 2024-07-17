@@ -8,16 +8,16 @@ export default async function decorate(block) {
           div.className  = 'myapi-class';
         
 		
-const title = fetchData();
+const title = fetchData(block);
 
 	alert("title"+title);  
   block.append(title);
 }
 
 
-async function fetchData() {
+async function fetchData(block) {
   const response = await fetch('https://jsonplaceholder.typicode.com/todos/1').then(res=>res.clone().json())
-
+block.append(response.title);
   console.log(response);
 }
 
