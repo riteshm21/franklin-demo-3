@@ -8,10 +8,9 @@ export default async function decorate(block) {
           div.className  = 'myapi-class';
         
 		
-const title = fetchData(block);
+ fetchData(block);
 
-	alert("title"+title);  
-  block.append(title);
+	
 }
 
 
