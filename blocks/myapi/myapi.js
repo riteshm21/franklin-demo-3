@@ -1,5 +1,5 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
-const a = "":
+const a = "";
 const title = fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then((response) => response.json())
   .then((data) => {
