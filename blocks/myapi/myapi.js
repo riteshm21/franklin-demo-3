@@ -1,13 +1,28 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
+const title = fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((data) => {
+    return data.title;
+  });
+
+const printTitle = async () => {
+  const a = await title;
+  console.log(a);
+};
+
+
 export default function decorate(block) {
   /* change to ul, li */
   const div = document.createElement('div');
 
- var data = fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json));
-	  
-	alert("data"+data);  
-  block.append(data.title);
+printTitle();
+
+	alert("printTitle"+printTitle);  
+  block.append(printTitle);
 }
+
+
+
+
+
