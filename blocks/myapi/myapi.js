@@ -1,5 +1,5 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
-
+const a = "":
 const title = fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then((response) => response.json())
   .then((data) => {
@@ -7,7 +7,7 @@ const title = fetch("https://jsonplaceholder.typicode.com/todos/1")
   });
 
 const printTitle = async () => {
-  const a = await title;
+   a = await title;
   console.log(a);
 };
 
@@ -18,8 +18,8 @@ export default function decorate(block) {
 
 printTitle();
 
-	alert("printTitle"+printTitle);  
-  block.append(printTitle);
+	alert("printTitle"+a);  
+  block.append(a);
 }
 
 
