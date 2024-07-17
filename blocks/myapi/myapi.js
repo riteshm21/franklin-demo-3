@@ -6,6 +6,7 @@ const title = fetch("https://jsonplaceholder.typicode.com/todos/1")
     return data.title;
   });
 
+
 const printTitle = async () => {
    a = await title;
   console.log(a);
