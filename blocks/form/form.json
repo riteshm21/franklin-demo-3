@@ -220,18 +220,6 @@
 "Fieldset": ""
 },
 {
-"Name": "extetrnalSelect",
-"Type": "select",
-"Label": "State",
-"Placeholder": "Select A State...",
-"Value": "",
-"Options": "https://main--helix-block-collection--adobe.hlx.page/block-collection/form.json?sheet=states",
-"Mandatory": "",
-"Style": "",
-"ID": "",
-"Fieldset": ""
-},
-{
 "Name": "submit",
 "Type": "submit",
 "Label": "",
