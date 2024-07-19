@@ -18,7 +18,7 @@
 {
 "Name": "description",
 "Type": "plaintext",
-"Label": "Enter your favorite quote, and you could win a prize (not really, this is just an example form)",
+"Label": "Enter your form",
 "Placeholder": "",
 "Value": "",
 "Options": "",
@@ -57,6 +57,18 @@
 "Label": "",
 "Placeholder": "",
 "Value": "https://main--helix-block-collection--adobe.hlx.live/block-collection/form-thank-you",
+"Options": "",
+"Mandatory": "",
+"Style": "",
+"ID": "",
+"Fieldset": ""
+},
+{
+"Name": "submit",
+"Type": "submit",
+"Label": "",
+"Placeholder": "",
+"Value": "",
 "Options": "",
 "Mandatory": "",
 "Style": "",
