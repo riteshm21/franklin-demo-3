@@ -40,7 +40,7 @@
 "Fieldset": "quoteFS"
 },
 {
-"Name": "firstname",
+"Name": "lasttname",
 "Type": "text",
 "Label": "Last Name",
 "Placeholder": "",
